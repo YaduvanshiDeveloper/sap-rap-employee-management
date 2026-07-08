@@ -1,0 +1,32 @@
+managed implementation in class zbp_i_emp_root_cds unique;
+strict (2);
+
+define behavior for ZI_EMP_ROOT_CDS
+persistent table ZEMP_MSTR_DATA
+lock master
+authorization master ( instance )
+{
+  create;
+  update;
+  delete;
+
+  field ( readonly ) EmpId;
+
+  mapping for ZEMP_MSTR_DATA
+  {
+    EmpId         = emp_id;
+    EmpName       = emp_name;
+    Email         = email;
+    Phone         = phone;
+    Department    = department;
+    Designation   = designation;
+    CukyField     = cuky_field;
+    Salary        = salary;
+    JoinDate      = join_date;
+    Status        = status;
+    CreatedBy     = created_by;
+    CreatedAt     = created_at;
+    LastChangedBy = last_changed_by;
+    LastChangedAt = last_changed_at;
+  }
+}

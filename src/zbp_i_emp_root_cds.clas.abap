@@ -1,0 +1,4 @@
+CLASS zbp_i_emp_root_cds DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zi_emp_root_cds.
+ENDCLASS.
+CLASS zbp_i_emp_root_cds IMPLEMENTATION.
+ENDCLASS.

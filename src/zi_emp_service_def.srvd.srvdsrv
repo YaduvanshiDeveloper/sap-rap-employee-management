@@ -1,0 +1,4 @@
+@EndUserText.label: 'Employee Service'
+define service ZI_EMP_SERVICE_DEF {
+  expose ZI_EMP_ROOT_CDS;
+}
